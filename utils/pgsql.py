@@ -1,14 +1,14 @@
 import pandas as pd
 import psycopg2
 from psycopg2.extras import execute_values
-# 生产环境：192.168.10.4
-# 测试环境：192.168.0.194
+
+# 此处已修改为虚拟的账户密码(仅为展示)
 conn = psycopg2.connect(
-        host="192.168.0.194",
-        port="5432",
+        host="192.168.0.238",
+        port="5892",
         dbname="ems",
         user="LNP",
-        password="lnp@timescaledb",
+        password="lnp@time",
     )
 
 def reset_forecast_table():
